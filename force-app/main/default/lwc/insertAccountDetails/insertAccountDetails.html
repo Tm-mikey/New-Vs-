@@ -1,0 +1,27 @@
+<template> 
+    <div class="m"> 
+        <lightning-card  title="Account" icon-name="standard:account" class="main">
+            <template if:true={openSpinner}>
+				<lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+			</template>
+        <div class="input">
+            <lightning-input label="Name" data-name="Name" value={accountDetail.Name} onchange={handleChange} >
+            </lightning-input>
+            <lightning-input label="Phone" data-name="Phone"  value={accountDetail.Phone} onchange={handleChange} >
+            </lightning-input>
+            <lightning-input label="AnnualRevenue" data-name="AnnualRevenue" value={accountDetail.AnnualRevenue} onchange={handleChange} >
+            </lightning-input>
+        </div>
+        <div class="save">
+            <lightning-button label="Save" onclick={clickSave}>
+            </lightning-button>
+        </div>   
+        </lightning-card>
+        <div class="recordinfo"> 
+        <lightning-card title="Account Details">
+            <lightning-datatable key-field="id" data={accounts.data} columns={columns}>
+            </lightning-datatable>
+        </lightning-card> 
+    </div> 
+    </div> 
+</template>

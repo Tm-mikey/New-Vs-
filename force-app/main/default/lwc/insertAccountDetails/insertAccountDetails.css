@@ -1,0 +1,25 @@
+.input{
+    padding-left: 2%;
+    margin: 2%;
+    font-weight:700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 2%;
+    color: black; 
+       
+}
+.main{
+    color: rgb(0, 112, 210);
+    font-weight: bolder;
+}
+.save{
+    text-align: center;
+    padding-top: 2%;
+}
+.m {
+    margin-right:60%;
+}
+.recordinfo{
+    color: rgb(0, 112, 210);
+    margin-top: 1%;   
+}
+
